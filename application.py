@@ -26,7 +26,7 @@ def sent_vec(sent,model):
     model_res = model_res/ctr
     return model_res
 
-#!python -m spacy download en_core_web_sm
+#python -m spacy download en_core_web_sm 
 nlp = spacy.load("en_core_web_sm")
 stop_words = nlp.Defaults.stop_words
 punctuations = string.punctuation
